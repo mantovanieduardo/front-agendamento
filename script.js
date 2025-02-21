@@ -3,7 +3,7 @@ async function login(event) {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
   
-    const response = await fetch("https://SEU_BACKEND.com/login", {
+    const response = await fetch("https://agendamento-sistema-lryl.onrender.com/login", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password })
@@ -18,7 +18,7 @@ async function login(event) {
     const username = document.getElementById("newUsername").value;
     const password = document.getElementById("newPassword").value;
   
-    const response = await fetch("https://agendamento-sistema-lryl.onrender.com", {
+    const response = await fetch("https://agendamento-sistema-lryl.onrender.com/register", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ username, password })
